@@ -38,7 +38,18 @@ void init_inv(grille=[4][8]){ //initialise le premier niveau
     grille[2][0]=0; grille[2][1]=0; grille[2][2]=0; grille[2][3]=0; grille[2][4]=0; grille[2][5]=0; grille[2][6]=0; grille[2][7]=0;
     grille[3][0]=0; grille[3][1]=0; grille[3][2]=0; grille[3][3]=0; grille[3][4]=0; grille[3][5]=0; grille[3][6]=0; grille[3][7]=0;
 }
-void affichage(grille_plateau[64][128]){ //fonction qui fait l'affichage de l'écran glcd
+void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écran glcd
+{
+    int i,j = 0;
+    for (i<64;i=0;i++){
+        for (j<128;j=0;j++){
+            if (grille_plateau[i][j] == 0)
+                //clean le pixel
+            else 
+                //affiche un pixxel
+        }
+    } 
+}
 void deplacement_horizontal_inv(){ 
      while(deplacement_possible==1){
           if(1){
@@ -51,3 +62,104 @@ int deplacementtest(grille_plateau[64][128]){
          
      }
 }
+
+    
+    
+    
+    
+    // MENU
+    
+    
+    
+    
+    
+    
+    
+    
+    // Boucle de jeu
+    while (jeu == 1)
+    {
+        //tour invader
+        if (invaderclock == diff)
+        {
+            // déplacement des invaders
+            depinvader()
+            
+            //test de défaite
+            defeat()
+            
+            invaderclock = 0;
+        }
+        
+        //déplacement des tirs
+        dep_tirs()
+                
+        //test de collision des tirs avec des ennemis
+        damagetest()
+            
+        //test de victoire
+        victory()
+        
+        //tour du joueur
+        if (playerclock == speed)
+        {
+            //déplacement du joueur
+            switch ?
+                //déplacement droite
+                case PORTBbits.RB
+                //déplacement gauche
+                case PORTBbits.RB
+                    
+                //tir
+                case PORTBbits.RB
+                    if (cooldown == 0)
+                    {
+                        fire()
+                        cooldown = 5;
+                    }
+            
+        }
+        //affichage de l'écran
+        
+        
+        //incrémentation des valeurs
+        playerclock ++;
+        invader clock ++;
+        if (cooldown < 0)
+            cooldown --;
+        wait ();
+        
+    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
