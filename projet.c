@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "deplacement.h"
 //DECLARATION DES VARIABLES GLOBALES
 
 int grille[4][8];
