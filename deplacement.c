@@ -32,5 +32,7 @@ void deplacement_horizontal_inv(char* gauche){
 int deplacementtest(grille_plateau[64][128]){
   int i=0,y=1;
   char gauche='oui';
-  for()
+  for(i;i<64;i++){
+    if(grille_plateau[][])
+  }
 }
