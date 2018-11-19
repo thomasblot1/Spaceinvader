@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "deplacement.h"
-void deplacement_horizontal_inv(char* gauche, int grille_plateau[64][128]){
+void deplacement_horizontal_inv(char* gauche, int grille_plateau[64][128],int*deplacement_possible){
 
   int i,j = 0;
 
@@ -29,7 +29,7 @@ void deplacement_horizontal_inv(char* gauche, int grille_plateau[64][128]){
      }
    }
 }
-void deplacementtest(grille_plateau[64][128]){
+int deplacementtest(grille_plateau[64][128]){
   int i=0,y=1;
 
   if(gauche=='oui'){
@@ -41,6 +41,7 @@ void deplacementtest(grille_plateau[64][128]){
         deplacement_possible=0;
       }
     }
+    return(deplacement_possible);
   }
 
 }
@@ -48,7 +49,7 @@ void deplacement( int grille_plateau[64][128],int*gagne){
   char gauche='oui';
   while(gagne==1){
     deplacementtest(grille_plateau[64][128],);
-    deplacement_horizontal_inv(&gauche, grille_plateau[64][128]);
+    deplacement_horizontal_inv(&gauche, grille_plateau[64][128],&deplacement_possible);
 
   }
 }
