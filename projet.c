@@ -21,7 +21,7 @@ typedef struct invader{
 
 //DECLARATION DES FONCTIONS
 void aff_invader(){ //imprime un invader dans la grille_plateau avec son numéro
-    
+
 }
 void cleanse( grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
     int i,j = 0;
@@ -31,8 +31,8 @@ void cleanse( grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
         }
     }
 }
-            
-   
+
+
 void init_inv(grille=[4][8]){ //initialise le premier niveau
     grille[0][0]=0; grille[0][1]=0; grille[0][2]=0; grille[0][3]=0; grille[0][4]=0; grille[0][5]=0; grille[0][6]=0; grille[0][7]=0;
     grille[1][0]=0; grille[1][1]=0; grille[1][2]=0; grille[1][3]=0; grille[1][4]=0; grille[1][5]=0; grille[1][6]=0; grille[1][7]=0;
@@ -46,15 +46,15 @@ void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écr
         for (j<128;j=0;j++){
             if (grille_plateau[i][j] == 0)
                 //clean le pixel
-            else 
+            else
                 //affiche un pixxel
         }
-    } 
+    }
 }
-void deplacement_horizontal_inv(){ 
-  
+void deplacement_horizontal_inv(char* gauche){
+
   int i,j = 0;
-  char gauche='oui';
+
   while(deplacement_possible==1){
     if(gauche=='oui'){
       for(i=0;i<64;i++){
@@ -79,26 +79,27 @@ void deplacement_horizontal_inv(){
    }
 }
 int deplacementtest(grille_plateau[64][128]){
+  char gauche='oui';
      for(int numero_invader_test=1;numero_invader_test<=40;numero_invader_test++){
-         
+
      }
 }
 depinvader()
-defeat()    
+defeat()
 dep_tirs()
-damagetest()    
+damagetest()
 victory()
-fire()    
-    
+fire()
+
     // MENU
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     // Boucle de jeu
     while (jeu == 1)
     {
@@ -107,22 +108,22 @@ fire()
         {
             // déplacement des invaders
             depinvader()
-            
+
             //test de défaite
             defeat()
-            
+
             invaderclock = 0;
         }
-        
+
         //déplacement des tirs
         dep_tirs()
-                
+
         //test de collision des tirs avec des ennemis
         damagetest()
-            
+
         //test de victoire
         victory()
-        
+
         //tour du joueur
         if (playerclock == speed)
         {
@@ -132,7 +133,7 @@ fire()
                 case PORTBbits.RB
                 //déplacement gauche
                 case PORTBbits.RB
-                    
+
                 //tir
                 case PORTBbits.RB
                     if (cooldown == 0)
@@ -140,16 +141,16 @@ fire()
                         fire()
                         cooldown = 5;
                     }
-            
+
         }
         //affichage de l'écran
         affichage (grille_plateau)
-        
+
         //incrémentation des valeurs
         playerclock ++;
         invader clock ++;
         if (cooldown < 0)
             cooldown --;
         wait ();
-        
+
     }
