@@ -7,6 +7,7 @@
 int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
+int invmod[
 //DECLARATION DES STRUCTURES
 typedef struct joueur{
     int touche;
@@ -62,10 +63,12 @@ int deplacementtest(grille_plateau[64][128]){
          
      }
 }
-
-    
-    
-    
+depinvader()
+defeat()    
+dep_tirs()
+damagetest()    
+victory()
+fire()    
     
     // MENU
     
@@ -120,7 +123,7 @@ int deplacementtest(grille_plateau[64][128]){
             
         }
         //affichage de l'écran
-        
+        affichage (grille_plateau)
         
         //incrémentation des valeurs
         playerclock ++;
