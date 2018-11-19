@@ -81,7 +81,7 @@ void deplacement_horizontal_inv(char* gauche){
 int deplacementtest(grille_plateau[64][128]){
   char gauche='oui';
      for(int numero_invader_test=1;numero_invader_test<=40;numero_invader_test++){
-
+        if()
      }
 }
 depinvader()
