@@ -40,7 +40,16 @@ void cleanse( grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
             grille_plateau[i][j] = 0;
         }
     }
+    for (i<64;i=0;i++){
+        grille_plateau[i][0] = 99;
+        grille_plateau[i][127] = 99;
+    }
+    for (j<128;j=0;j++){
+        grille_plateau[0][j] = 99;
+        grille_plateau[63][j] = 99;
+    }
 }
+            
 
 
 void init_inv(grille=[4][8]){ //initialise le premier niveau
