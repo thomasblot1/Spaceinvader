@@ -25,9 +25,7 @@ invmod[7][0]=0;invmod[7][1]=0;invmod[7][2]=0;invmod[7][3]=1;invmod[7][4]=1;invmo
 
 
 //DECLARATION DES FONCTIONS
-void aff_invader(){ //imprime un invader dans la grille_plateau avec son numéro
 
-}
 void cleanse( grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
     int i,j = 0;
     for (i<64;i=0;i++){

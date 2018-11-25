@@ -20,7 +20,7 @@ void init_inv(grille=[4][8]){ //initialise le premier niveau
     grille[2][0]=0; grille[2][1]=0; grille[2][2]=0; grille[2][3]=0; grille[2][4]=0; grille[2][5]=0; grille[2][6]=0; grille[2][7]=0;
     grille[3][0]=0; grille[3][1]=0; grille[3][2]=0; grille[3][3]=0; grille[3][4]=0; grille[3][5]=0; grille[3][6]=0; grille[3][7]=0;
 }
-void aff_invader(invmod[8][11])
+void aff_invader(invmod[8][11])  //imprime un invader dans la grille_plateau avec son numero
 {
     int x_start = 13;
     int y_start = 1;
