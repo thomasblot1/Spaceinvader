@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "deplacement.h"
+#include "projet.h"
+#include "invaderinit.h"
 //DECLARATION DES VARIABLES GLOBALES
 
 int grille[4][8];
@@ -19,14 +21,7 @@ invmod[6][0]=1;invmod[6][1]=0;invmod[6][2]=1;invmod[6][3]=0;invmod[6][4]=0;invmo
 invmod[7][0]=0;invmod[7][1]=0;invmod[7][2]=0;invmod[7][3]=1;invmod[7][4]=1;invmod[7][5]=0;invmod[7][6]=1;invmod[7][7]=1;invmod[7][8]=0;invmod[7][9]=0;invmod[7][10]=0;
 
 //DECLARATION DES STRUCTURES
-typedef struct joueur{
-    int touche;
-};
-typedef struct invader{
-    int pv;
-    int positioncentrale;
-    int invid;
-};
+
 
 
 //DECLARATION DES FONCTIONS

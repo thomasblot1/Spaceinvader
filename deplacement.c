@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "deplacement.h"
-void deplacement_horizontal_inv(char* gauche, int grille_plateau[64][128],int*deplacement_possible){
+void deplacement_horizontal_inv(bool*gauche, int grille_plateau[64][128],int*deplacement_possible){
 
   int i,j = 0;
 
   while(deplacement_possible==1){
-    if(gauche=='oui'){
+    if(gauche==true){
       for(i=0;i<64;i++){
         for(y=0;y<128;y++){
           if(grille_plateau[i][y]!=0){
@@ -29,12 +29,12 @@ void deplacement_horizontal_inv(char* gauche, int grille_plateau[64][128],int*de
      }
    }
 }
-int deplacementtest(grille_plateau[64][128]){
+int deplacementtest(&gauche,grille_plateau[64][128]){
   int i=0,y=1;
 
-  if(gauche=='oui'){
+  if(gauche==true){
     for(i;i<64;i++){
-      if(grille_plateau[i][1]==0){
+      if(grille_plateau[i][1]!=99){
 
       }
       else{
@@ -45,11 +45,13 @@ int deplacementtest(grille_plateau[64][128]){
   }
 
 }
-void deplacement( int grille_plateau[64][128],int*gagne){
-  char gauche='oui';
-  while(gagne==1){
-    deplacementtest(grille_plateau[64][128],);
-    deplacement_horizontal_inv(&gauche, grille_plateau[64][128],&deplacement_possible);
-
+void deplacement(int grille_plateau[64][128],int*gagne){//deplacement des invaders et non du joueur
+  bool gauche=true;
+  if(deplacementtest(&gauche,grille_plateau[64][128])==0){
+      deplacement_horizontal_inv(&gauche, grille_plateau[64][128],&deplacement_possible);
+  }
+  else{
+      deplacement_vertical_inv(grille_plateau[64][128],&deplacement_possible);
+      gauche=!gauche;
   }
 }
