@@ -10,7 +10,7 @@
 int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
-int invmod[8][11];
+int invmod[8][11];g
 
 invmod[0][0]=0;invmod[0][1]=0;invmod[0][2]=1;invmod[0][3]=0;invmod[0][4]=0;invmod[0][5]=0;invmod[0][6]=0;invmod[0][7]=0;invmod[0][8]=1;invmod[0][9]=0;invmod[0][10]=0;
 invmod[1][0]=0;invmod[1][1]=0;invmod[1][2]=0;invmod[1][3]=1;invmod[1][4]=0;invmod[1][5]=0;invmod[1][6]=0;invmod[1][7]=1;invmod[1][8]=0;invmod[1][9]=0;invmod[1][10]=0;
