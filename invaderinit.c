@@ -7,7 +7,7 @@
 
 void init_inv(grille=[4][8]){ //initialise le premier niveau
     grille[0][0]=1; grille[0][1]=2; grille[0][2]=3; grille[0][3]=4; grille[0][4]=5; grille[0][5]=6; grille[0][6]=7; grille[0][7]=8;
-    grille[1][0]=9; grille[1][1]10; grille[1][2]=11; grille[1][3]=12; grille[1][4]=13; grille[1][5]=14; grille[1][6]=15; grille[1][7]=16;
+    grille[1][0]=9; grille[1][1]=10; grille[1][2]=11; grille[1][3]=12; grille[1][4]=13; grille[1][5]=14; grille[1][6]=15; grille[1][7]=16;
     grille[2][0]=17; grille[2][1]=18; grille[2][2]=19; grille[2][3]=20; grille[2][4]=21; grille[2][5]=22; grille[2][6]=23; grille[2][7]=24;
     grille[3][0]=25; grille[3][1]=26; grille[3][2]=28; grille[3][3]=28; grille[3][4]=29; grille[3][5]=30; grille[3][6]=31; grille[3][7]=32;
 }
