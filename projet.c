@@ -65,10 +65,7 @@ void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écr
     }
 }
 
-depinvader()
-defeat()
 dep_tirs()
-damagetest()
 victory()
 fire()
 
