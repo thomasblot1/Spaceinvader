@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "deplacement.h"
+#include "projet.h"
 void deplacement_horizontal_inv(bool*gauche, int grille_plateau[64][128],int*deplacement_possible){
 
   int i,j = 0;

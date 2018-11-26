@@ -11,7 +11,4 @@ typedef struct invader{
 void cleanse( grille_plateau[64][128]);
 void init_inv(grille=[4][8]);
 void affichage(grille_plateau[64][128]);
-
-
-
 #endif
