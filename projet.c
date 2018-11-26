@@ -4,6 +4,7 @@
 #include "deplacement.h"
 #include "projet.h"
 #include "invaderinit.h"
+#include "affichage.h"
 //DECLARATION DES VARIABLES GLOBALES
 
 int grille[4][8];
