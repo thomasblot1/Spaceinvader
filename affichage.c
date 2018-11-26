@@ -3,12 +3,25 @@
 #include <string.h>
 #include "glcd.h"
 
+<<<<<<< HEAD
 void convertisseur(int[64][128] grille_64_128,char[8191] logo){
   int i,y,rang_initial=0;
   char d=0x;
   for(i=0;i<64;i++){
     for(y=0;y<128;y++){
       if((i%8==0)&&(i!=0)){
+=======
+void convertisseur(grille_64_128[64][128], logo[8191]){
+  int i,y,rang_initial=0;
+  for(i=0;i<64;i++){
+    for(y=0;y<128;y++){
+      
+      if((i%8==0)&&(i!=0)){
+
+        rang_initial;
+      }
+
+>>>>>>> 68574fec4dbac4f4cb2e40e85919d2131dc7738e
 
         rang_initial+=128;
       }
