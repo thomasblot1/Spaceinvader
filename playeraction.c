@@ -12,8 +12,9 @@ playermodel[2][0]=0;playermodel[2][1]=0;playermodel[2][2]=1;playermodel[2][3]=0;
 playermodel[3][0]=1;playermodel[3][1]=0;playermodel[3][2]=1;playermodel[3][3]=1;playermodel[3][4]=1;playermodel[3][5]=1;playermodel[3][6]=1;playermodel[3][7]=1;playermodel[3][8]=1;playermodel[3][9]=0;playermodel[3][10]=1;
 playermodel[4][0]=1;playermodel[4][1]=1;playermodel[4][2]=1;playermodel[4][3]=1;playermodel[4][4]=1;playermodel[4][5]=1;playermodel[4][6]=1;playermodel[4][7]=1;playermodel[4][8]=1;playermodel[4][9]=1;playermodel[4][10]=1;
 playermodel[5][0]=0;playermodel[5][1]=0;playermodel[5][2]=1;playermodel[5][3]=0;playermodel[5][4]=1;playermodel[5][5]=0;playermodel[5][6]=1;playermodel[5][7]=0;playermodel[5][8]=1;playermodel[5][9]=0;playermodel[5][10]=0;
-        
-        
+
+
+
 void fire(playerpos, grille_plateau[64][128])
 {
     grille_plateau[56][playerpos] = 66;
@@ -43,19 +44,12 @@ void dep_tirs(grille_plateau[64][128], *grille[4][8])
         }
     }
 }
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
