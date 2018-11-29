@@ -10,7 +10,7 @@ int jeu=1;
 int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
-struct joueur.pv=1;
+struct joueur->touche=1;
 int playerpos=64;
 int playermodel[6][11];
 playermodel[0][0]=0;playermodel[0][1]=0;playermodel[0][2]=0;playermodel[0][3]=0;playermodel[0][4]=0;playermodel[0][5]=1;playermodel[0][6]=0;playermodel[0][7]=0;playermodel[0][8]=0;playermodel[0][9]=0;playermodel[0][10]=0;
