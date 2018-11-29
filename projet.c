@@ -11,7 +11,7 @@ int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
 struct joueur.pv=1;
-int playerpos = 64;
+int playerpos=64;
 int playermodel[6][11];
 playermodel[0][0]=0;playermodel[0][1]=0;playermodel[0][2]=0;playermodel[0][3]=0;playermodel[0][4]=0;playermodel[0][5]=1;playermodel[0][6]=0;playermodel[0][7]=0;playermodel[0][8]=0;playermodel[0][9]=0;playermodel[0][10]=0;
 playermodel[1][0]=0;playermodel[1][1]=0;playermodel[1][2]=0;playermodel[1][3]=0;playermodel[1][4]=0;playermodel[1][5]=1;playermodel[1][6]=0;playermodel[1][7]=0;playermodel[1][8]=0;playermodel[1][9]=0;playermodel[1][10]=0;
@@ -55,9 +55,7 @@ void affichage(grille_plateau[64][128]){//fonction qui fait l'affichage de l'éc
 
 dep_tirs()
 fire()
-
     // MENU
-
 int defeat(struct joueur *j1, int *fin){
   if(j1.pv==0)
       *fin=666;
@@ -73,7 +71,6 @@ int victory(int grille[4][8],int *jeu){
       }
     }
   }
-
 }
 
 
@@ -98,7 +95,7 @@ int main(){
         defeat(&joueur,&jeu);
 
         //test de victoire
-        victory()
+        victory(grille[4][8],&jeu);
 
         //tour du joueur
         if (playerclock == speed){
@@ -118,7 +115,7 @@ int main(){
           }
         //affichage de l'écran
         convertisseur(grille_plateau[64][128],logo[8191]);
-
+        glcd_image();
 
 
         //incrémentation des valeurs
