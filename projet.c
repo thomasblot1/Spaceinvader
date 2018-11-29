@@ -24,7 +24,7 @@ playermodel[5][0]=0;playermodel[5][1]=0;playermodel[5][2]=1;playermodel[5][3]=0;
 
 //DECLARATION DES FONCTIONS
 
-void cleanse(grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
+void cleanse(grille_plateau[64][128]){//vide grille_plateau de toutes valeurs
     int i,j = 0;
     for (i<64;i=0;i++){
         for (j<128;j=0;j++){
