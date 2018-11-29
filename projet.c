@@ -10,6 +10,7 @@ int jeu=1;
 int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
+struct joueur.pv=1;
 int playerpos = 64;
 int playermodel[6][11];
 playermodel[0][0]=0;playermodel[0][1]=0;playermodel[0][2]=0;playermodel[0][3]=0;playermodel[0][4]=0;playermodel[0][5]=1;playermodel[0][6]=0;playermodel[0][7]=0;playermodel[0][8]=0;playermodel[0][9]=0;playermodel[0][10]=0;
@@ -19,14 +20,11 @@ playermodel[3][0]=1;playermodel[3][1]=0;playermodel[3][2]=1;playermodel[3][3]=1;
 playermodel[4][0]=1;playermodel[4][1]=1;playermodel[4][2]=1;playermodel[4][3]=1;playermodel[4][4]=1;playermodel[4][5]=1;playermodel[4][6]=1;playermodel[4][7]=1;playermodel[4][8]=1;playermodel[4][9]=1;playermodel[4][10]=1;
 playermodel[5][0]=0;playermodel[5][1]=0;playermodel[5][2]=1;playermodel[5][3]=0;playermodel[5][4]=1;playermodel[5][5]=0;playermodel[5][6]=1;playermodel[5][7]=0;playermodel[5][8]=1;playermodel[5][9]=0;playermodel[5][10]=0;
 
-
 //DECLARATION DES STRUCTURES
-
-
 
 //DECLARATION DES FONCTIONS
 
-void cleanse( grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
+void cleanse(grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
     int i,j = 0;
     for (i<64;i=0;i++){
         for (j<128;j=0;j++){
@@ -51,7 +49,7 @@ void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écr
             if (grille_plateau[i][j] == 0)
                 //clean le pixel
             else
-                //affiche un pixxel
+                //affiche un pixel
         }
     }
 }
@@ -62,8 +60,11 @@ fire()
 
     // MENU
 
-
-
+int defeat(*struct joueur j1,*fin){
+  if(j1.pv==0)
+      *fin=0;
+}
+int victory(*grille_plateau)
 
 
 int main(){
@@ -77,7 +78,7 @@ int main(){
             deplacement(int grille_plateau[64][128]);
 
             //test de défaite
-            defeat()
+            defeat(&joueur, &jeu);
 
             invaderclock = 0;
         }
@@ -92,17 +93,16 @@ int main(){
         victory()
 
         //tour du joueur
-        if (playerclock == speed)
-        {
+        if (playerclock == speed){
             //déplacement du joueur
-            switch ?
+            switch :
                 //déplacement droite
-                case PORTBbits.RB
+                case PORTBbits.RE6
                 //déplacement gauche
-                case PORTBbits.RB
+                case PORTBbits.RE4
 
                 //tir
-                case PORTBbits.RB
+                case PORTBbits.RB6
                     if (cooldown == 0)
                     {
                         fire()
@@ -111,6 +111,8 @@ int main(){
 
         }
         //affichage de l'écran
+        convertisseur(grille_plateau[64][128],logo[8191]);
+
 
 
         //incrémentation des valeurs

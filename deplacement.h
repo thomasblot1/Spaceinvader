@@ -3,7 +3,7 @@
 
 
 void deplacement_horizontal_inv(bool*gauche, int grille_plateau[64][128],int*deplacement_possible);
-int deplacementtest(&gauche,grille_plateau[64][128]);
+int deplacementtest(int gauche,int grille_plateau[64][128]);
 void deplacement(int grille_plateau[64][128]);
 
 
