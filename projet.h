@@ -12,6 +12,6 @@ void cleanse(int grille_plateau[64][128]);
 void affichage(int grille_plateau[64][128]);
 void invdeath(int*num, *grille[4][8]);
 
-int defeat(struct joueur *j1, int *fin)
-int victory(int grille[4][8],int *jeu)
+int defeat(struct joueur *j1, int *fin);
+int victory(int grille[4][8],int *jeu);
 #endif
