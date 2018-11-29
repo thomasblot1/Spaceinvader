@@ -41,8 +41,7 @@ void cleanse(grille_plateau[64][128]){ //vide grille_plateau de toutes valeurs
     }
 }
 
-void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écran glcd
-{
+void affichage(grille_plateau[64][128]){//fonction qui fait l'affichage de l'écran glcd
     int i,j = 0;
     for (i<64;i=0;i++){
         for (j<128;j=0;j++){
@@ -59,11 +58,11 @@ fire()
 
     // MENU
 
-int defeat(*struct joueur j1,*fin){
+int defeat(struct joueur *j1, int *fin){
   if(j1.pv==0)
       *fin=0;
 }
-int victory(int grille[4][8],int*jeu){
+int victory(int grille[4][8],int *jeu){
   int i,y;
   *jeu=0;
   for(i=0;i<4;i++){
@@ -80,11 +79,9 @@ int victory(int grille[4][8],int*jeu){
 
 int main(){
     // Boucle de jeu
-    while (jeu == 1)
-    {
+    while (jeu == 1){
         //tour invader
-        if (invaderclock == diff)
-        {
+        if (invaderclock == diff){
             // déplacement des invaders
             deplacement(int grille_plateau[64][128]);
 
@@ -93,7 +90,6 @@ int main(){
 
             invaderclock = 0;
         }
-
         //déplacement des tirs
         dep_tirs()
 
@@ -114,13 +110,11 @@ int main(){
 
                 //tir
                 case PORTBbits.RB6
-                    if (cooldown == 0)
-                    {
+                    if (cooldown == 0){
                         fire(&playerpos,grille_plateau[64][128])
                         cooldown = 5;
                     }
-
-        }
+          }
         //affichage de l'écran
         convertisseur(grille_plateau[64][128],logo[8191]);
 
