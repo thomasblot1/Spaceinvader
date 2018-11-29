@@ -60,7 +60,7 @@ fire()
 
 int defeat(struct joueur *j1, int *fin){
   if(j1.pv==0)
-      *fin=0;
+      *fin=666;
 }
 int victory(int grille[4][8],int *jeu){
   int i,y;
@@ -95,6 +95,7 @@ int main(){
 
         //test de collision des tirs avec des ennemis
         damagetest()
+        defeat(&joueur,&jeu);
 
         //test de victoire
         victory()
