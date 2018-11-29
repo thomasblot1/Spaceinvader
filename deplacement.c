@@ -28,9 +28,9 @@ void deplacement_horizontal_inv(bool*gauche, int grille_plateau[64][128],int*dep
      }
    }
 }
-int deplacementtest(&gauche,grille_plateau[64][128]){
+int deplacementtest(bool*gauche,int grille_plateau[64][128]){
   int i=0,y=1;
-  if(*gauche==0){
+  if(*gauche==true){
     for(i;i<64;i++){
       if(grille_plateau[i][1]!=99){}
       else{

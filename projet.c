@@ -55,7 +55,6 @@ void affichage(grille_plateau[64][128])//fonction qui fait l'affichage de l'écr
 }
 
 dep_tirs()
-victory()
 fire()
 
     // MENU
@@ -64,7 +63,19 @@ int defeat(*struct joueur j1,*fin){
   if(j1.pv==0)
       *fin=0;
 }
-int victory(*grille_plateau)
+int victory(int grille[4][8],int*jeu){
+  int i,y;
+  *jeu=0;
+  for(i=0;i<4;i++){
+    for(y=0;y<8;y++){
+      if(grille[4][8]=!0){
+        *jeu=1;
+        return;
+      }
+    }
+  }
+
+}
 
 
 int main(){
@@ -105,7 +116,7 @@ int main(){
                 case PORTBbits.RB6
                     if (cooldown == 0)
                     {
-                        fire()
+                        fire(&playerpos,grille_plateau[64][128])
                         cooldown = 5;
                     }
 
