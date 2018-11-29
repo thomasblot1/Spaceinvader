@@ -15,14 +15,11 @@ playermodel[5][0]=0;playermodel[5][1]=0;playermodel[5][2]=1;playermodel[5][3]=0;
 
 
 
-void fire(playerpos, grille_plateau[64][128])
-{
+void fire(playerpos, grille_plateau[64][128]){
     grille_plateau[56][playerpos] = 66;
     grille_plateau[57][playerpos] = 66;
 }
-
-void dep_tirs(grille_plateau[64][128], *grille[4][8])
-{
+void dep_tirs(grille_plateau[64][128], *grille[4][8]){
     int i,j = 0;
     for (i=0;i<64;i++){
         for (j=0;j<128;j++){
@@ -43,13 +40,4 @@ void dep_tirs(grille_plateau[64][128], *grille[4][8])
             }
         }
     }
-}
-
-
-
-
-
-
-
-
 }

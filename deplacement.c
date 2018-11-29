@@ -46,7 +46,7 @@ int deplacementtest(&gauche,grille_plateau[64][128]){
   }
 
 }
-void deplacement(int grille_plateau[64][128],int*gagne){//deplacement des invaders et non du joueur
+void deplacement(int grille_plateau[64][128]){//deplacement des invaders et non du joueur
   bool gauche=true;
   if(deplacementtest(&gauche,grille_plateau[64][128])==0){
       deplacement_horizontal_inv(&gauche, grille_plateau[64][128],&deplacement_possible);

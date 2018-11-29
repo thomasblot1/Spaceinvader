@@ -22,5 +22,4 @@ void convertisseur(int grille_64_128[64][128],char logo[8191]){
 
 /*
 sprintf(num,"%x",compteur);
-char c=0x+num;
 logo[rang]=(char)c;*/
