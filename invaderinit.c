@@ -3,8 +3,6 @@
 #include <string.h>
 #include "invaderinit.h"
 #include "projet.h"
-
-
 void init_inv(int grille=[4][8]){ //initialise le premier niveau
     grille[0][0]=1; grille[0][1]=2; grille[0][2]=3; grille[0][3]=4; grille[0][4]=5; grille[0][5]=6; grille[0][6]=7; grille[0][7]=8;
     grille[1][0]=9; grille[1][1]=10; grille[1][2]=11; grille[1][3]=12; grille[1][4]=13; grille[1][5]=14; grille[1][6]=15; grille[1][7]=16;
