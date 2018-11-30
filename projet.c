@@ -5,6 +5,8 @@
 #include "projet.h"
 #include "invaderinit.h"
 #include "affichage.h"
+#include "playeraction.h"
+
 //DECLARATION DES VARIABLES GLOBALES
 int jeu=1;
 int grille[4][8];
