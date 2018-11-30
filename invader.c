@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "invaderinit.h"
+#include "invader.h"
 #include "projet.h"
 void init_inv(int grille=[4][8]){ //initialise le premier niveau
     grille[0][0]=1; grille[0][1]=2; grille[0][2]=3; grille[0][3]=4; grille[0][4]=5; grille[0][5]=6; grille[0][6]=7; grille[0][7]=8;
