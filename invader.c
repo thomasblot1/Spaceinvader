@@ -34,3 +34,19 @@ void aff_invader(int grille_plateau[64][128], int grille[4][8])  //imprime un in
         }
     }
 }
+
+void invdeath(int num , int grille[4][8], int grille_plateau[64][128])
+{
+    int i, j = 0;
+    for (i=0;i<4;i++){
+        for (j=0;j<8;j++){
+            if (grille[i][j] == num)
+                grille[i][j] = 0;
+        }
+    }
+    for (i=0;i<64;i++){
+        for (j=0;j<128;j++){
+            if (grille_plateau[i][j] == num)
+                grille_plateau[i][j] = 0;
+        }
+    }
