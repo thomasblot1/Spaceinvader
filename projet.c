@@ -10,6 +10,7 @@ int jeu=1;
 int grille[4][8];
 int grille_plateau[64][128];
 int deplacement_possible=0;
+int speed,playerclock,cooldown;
 struct joueur->touche=1;
 int playerpos=64;
 int playermodel[6][11];
@@ -88,15 +89,12 @@ int main(){
             invaderclock = 0;
         }
         //déplacement des tirs
-        dep_tirs()
-
+        dep_tirs();
         //test de collision des tirs avec des ennemis
-        damagetest()
+        damagetest();
         defeat(&joueur,&jeu);
-
         //test de victoire
         victory(grille[4][8],&jeu);
-
         //tour du joueur
         if (playerclock == speed){
             //déplacement du joueur
@@ -105,7 +103,6 @@ int main(){
                 case PORTBbits.RE6
                 //déplacement gauche
                 case PORTBbits.RE4
-
                 //tir
                 case PORTBbits.RB6
                     if (cooldown == 0){
