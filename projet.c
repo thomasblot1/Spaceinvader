@@ -43,7 +43,6 @@ void cleanse(grille_plateau[64][128]){//vide grille_plateau de toutes valeurs
         grille_plateau[63][j] = 99;
     }
 }
-
 void affichage(grille_plateau[64][128]){//fonction qui fait l'affichage de l'écran glcd
     int i,j = 0;
     for (i<64;i=0;i++){
@@ -55,7 +54,6 @@ void affichage(grille_plateau[64][128]){//fonction qui fait l'affichage de l'éc
         }
     }
 }
-
 dep_tirs()
 fire()
     // MENU
@@ -75,7 +73,6 @@ int victory(int grille[4][8],int *jeu){
     }
   }
 }
-
 
 int main(){
     // Boucle de jeu
@@ -111,7 +108,7 @@ int main(){
                         fire(&playerpos,grille_plateau[64][128])
                         cooldown = 5;
                     }
-          }
+                  }
         //affichage de l'écran
         convertisseur(grille_plateau[64][128],logo[8191]);
         glcd_image();
