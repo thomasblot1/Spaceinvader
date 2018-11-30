@@ -4,7 +4,7 @@
 #include "endgametest.h"
 #include "projet.h"
 
-int defeat_test(grille_plateau[64][128])
+int defeat_test( int grille_plateau[64][128])
 {
     int i = 0;
     int defeat = 0;
@@ -17,7 +17,7 @@ int defeat_test(grille_plateau[64][128])
     return defeat;
 }
 
-int victory_test(grille[4][8])
+int victory_test(int grille[4][8])
 {
     int victory = 1;
     int i,j = 0;
